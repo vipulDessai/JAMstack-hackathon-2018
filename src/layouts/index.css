@@ -629,6 +629,7 @@ pre tt:after {
   margin-bottom: 1rem;
 }
 .custom-link {
+  color: rebeccapurple;
   text-decoration: none;
 }
 .custom-link:hover {
