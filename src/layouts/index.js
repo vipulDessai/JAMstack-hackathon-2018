@@ -5,6 +5,8 @@ import Helmet from 'react-helmet'
 import Header from '../components/header'
 import './index.css'
 
+import favIcon from '../images/favicon.ico'
+
 const Layout = ({ children, data }) => (
   <div>
     <Helmet
@@ -12,6 +14,9 @@ const Layout = ({ children, data }) => (
       meta={[
         { name: 'description', content: 'Sample' },
         { name: 'keywords', content: 'sample, something' },
+      ]}
+      link={[
+        { rel: 'icon', type: 'image/x-icon', href: `${favIcon}` }
       ]}
     />
     <Header siteTitle={data.site.siteMetadata.title} />
