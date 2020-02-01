@@ -1,0 +1,18 @@
+.footer {
+  margin: 1em 0;
+  .projects {
+    display: flex;
+    a.project {
+      background: rebeccapurple;
+      padding: 1em;
+      margin: 0 1em;
+    }
+  }
+  .links {
+    margin: 2.5em 0;
+    .link {
+      font-size: 2em;
+      padding: 1em;
+    }
+  }
+}
