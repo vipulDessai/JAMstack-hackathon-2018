@@ -13,7 +13,7 @@ import Header from "./header"
 import Footer from "./footer"
 import "./layout.css"
 
-import Avatar from '../images/me.jpg'
+import ImageLoader from "../images/imageLoader"
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faStackOverflow, faTwitter, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
@@ -49,9 +49,11 @@ const Layout = ({ children }) => {
             {"Welcome to My Portfolio."}
           </p>
           <p>
-            {"I'm a web developer based in India, I believe learning is a continuous process to build your dreams that will create magic, using the power of HTML, CSS, JavaScript and now GatsbyJs."}
+            {"My name is Vipul Dessai, a web developer based in India, I believe learning is a continuous process to build your dreams that will create magic, using the power of HTML, CSS, JavaScript and now GatsbyJs."}
           </p>
-          <img className="avatar" src={Avatar} alt="" />
+          <div className="avatar">
+            <ImageLoader imageUrl={"me.jpg"}/>
+          </div>
         </div>
         <footer>
           <Footer />
