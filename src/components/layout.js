@@ -11,13 +11,15 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import Footer from "./footer"
-import "./layout.css"
+import NetlifyForms from "./netlifyForms"
+
+import "./layout.scss"
 
 import ImageLoader from "../images/imageLoader"
 
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faStackOverflow, faTwitter, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
-library.add( faStackOverflow, faTwitter, faGithub, faLinkedin )
+import { faStackOverflow, faTwitter, faGithub, faLinkedin, faCodepen, faMedium } from '@fortawesome/free-brands-svg-icons'
+library.add( faStackOverflow, faTwitter, faGithub, faLinkedin, faCodepen, faMedium )
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -55,12 +57,11 @@ const Layout = ({ children }) => {
             <ImageLoader imageUrl={"me.jpg"}/>
           </div>
         </div>
-        <footer>
-          <Footer />
-          © {new Date().getFullYear()}, Built with
+        <Footer />
+        <NetlifyForms />
+        © {new Date().getFullYear()}, Built with
           {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
+        <a href="https://www.gatsbyjs.org">Gatsby</a>
       </div>
     </div>
   )

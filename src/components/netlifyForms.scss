@@ -1,0 +1,38 @@
+$sizes: (
+    mobile: 540px,
+    tablet: 1000px,
+    hd: 1500px,
+);
+
+form.contact-form {
+  font-size: 0.75em;
+  ul {
+    margin: 0;
+    & > li {
+      list-style: none;
+    }
+  }
+  & > ul {
+    width: 50%;
+    margin: 0 auto;
+    @media only screen and (max-width: map-get($map: $sizes, $key: mobile)) {
+      width: 100%;
+    }
+  }
+  input, textarea {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid rebeccapurple;
+  }
+  button {
+    border: none;
+    background:rebeccapurple;
+    color:#fff;
+    font-size: 2em;
+    font-weight: 500;
+    padding: 0.4em 4em;
+    @media only screen and (max-width: map-get($map: $sizes, $key: mobile)) {
+      padding: 0.4em 2em;
+    }
+  }
+}

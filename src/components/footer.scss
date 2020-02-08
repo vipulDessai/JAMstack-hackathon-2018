@@ -1,3 +1,9 @@
+$sizes: (
+    mobile: 540px,
+    tablet: 1000px,
+    hd: 1500px,
+);
+
 .footer {
   margin: 2em 0;
   .projects {
@@ -7,9 +13,18 @@
       background: rebeccapurple;
       padding: 0.5rem;
       margin: 0 1em;
+      @media only screen and (max-width: map-get($map: $sizes, $key: mobile)) {
+        margin: 0 0 1em 0;
+      }
       div {
         width: 20vw;
+        @media only screen and (max-width: map-get($map: $sizes, $key: mobile)) {
+          width: 100%;
+        }
       }
+    }
+    @media only screen and (max-width: map-get($map: $sizes, $key: mobile)) {
+      flex-direction: column;
     }
   }
   .links {
@@ -17,6 +32,9 @@
     .link {
       font-size: 2em;
       padding: 1em;
+    }
+    @media only screen and (max-width: map-get($map: $sizes, $key: mobile)) {
+      margin: 1.5em 0;
     }
   }
 }
