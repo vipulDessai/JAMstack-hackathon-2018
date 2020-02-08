@@ -32,6 +32,8 @@ $sizes: (
     .link {
       font-size: 2em;
       padding: 1em;
+      text-decoration: none;
+      color: rebeccapurple;
     }
     @media only screen and (max-width: map-get($map: $sizes, $key: mobile)) {
       margin: 1.5em 0;
