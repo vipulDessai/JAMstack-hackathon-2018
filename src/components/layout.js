@@ -11,6 +11,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import Footer from "./footer"
+import Cv from "./cv"
 import NetlifyForms from "./netlifyForms"
 
 import "./layout.scss"
@@ -18,8 +19,9 @@ import "./layout.scss"
 import ImageLoader from "../images/imageLoader"
 
 import { library } from '@fortawesome/fontawesome-svg-core'
+import { faFileDownload } from '@fortawesome/free-solid-svg-icons'
 import { faStackOverflow, faTwitter, faGithub, faLinkedin, faCodepen, faMedium } from '@fortawesome/free-brands-svg-icons'
-library.add( faStackOverflow, faTwitter, faGithub, faLinkedin, faCodepen, faMedium )
+library.add( faStackOverflow, faTwitter, faGithub, faLinkedin, faCodepen, faMedium, faFileDownload )
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -58,6 +60,7 @@ const Layout = ({ children }) => {
           </div>
         </div>
         <Footer />
+        <Cv />
         <NetlifyForms />
         © {new Date().getFullYear()}, Built with
           {` `}

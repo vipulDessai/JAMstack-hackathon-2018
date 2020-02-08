@@ -4,6 +4,7 @@ import "./netlifyForms.scss"
 
 const NetlifyForms = () => (
   <form class="contact-form" name="contact" method="POST" data-netlify-honeypot="bot-field" data-netlify="true">
+    <h3>Contact Me</h3>
     <input type="hidden" name="bot-field" />
     <ul>
       <li>
