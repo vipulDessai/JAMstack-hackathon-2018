@@ -20,8 +20,8 @@ import ImageLoader from "../images/imageLoader"
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faFileDownload } from '@fortawesome/free-solid-svg-icons'
-import { faStackOverflow, faTwitter, faGithub, faLinkedin, faCodepen, faMedium } from '@fortawesome/free-brands-svg-icons'
-library.add( faStackOverflow, faTwitter, faGithub, faLinkedin, faCodepen, faMedium, faFileDownload )
+import { faStackOverflow, faTwitter, faGithub, faLinkedin, faCodepen, faMedium, faDev } from '@fortawesome/free-brands-svg-icons'
+library.add( faStackOverflow, faTwitter, faGithub, faLinkedin, faCodepen, faMedium, faDev, faFileDownload )
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -53,7 +53,7 @@ const Layout = ({ children }) => {
             {"Welcome to My Portfolio."}
           </p>
           <p>
-            {"My name is Vipul Dessai, a web developer based in India, I believe learning is a continuous process to build your dreams that will create magic, using the power of HTML, CSS, JavaScript and now GatsbyJs."}
+            {"My name is Vipul Dessai, a web developer based in India, I believe learning is a continuous process to build your dreams that will create magic, using the power of JavaScript, HTML and CSS"}
           </p>
           <div className="avatar">
             <ImageLoader imageUrl={"me.jpg"}/>
