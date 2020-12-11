@@ -64,7 +64,7 @@ const Layout = ({ children }) => {
         <NetlifyForms />
         © {new Date().getFullYear()}, Built with
           {` `}
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
+        <a href="https://www.gatsbyjs.org" target="_blank" rel="noopener noreferrer">Gatsby</a>
       </div>
     </div>
   )

@@ -11,7 +11,7 @@ const Footer = () => (
   <div className="footer">
     <h3 className="title">My Side Projects</h3>
     <div className="projects">
-      <a className="project" href="https://www.swak.co.in/" target="_blank" rel="noopener noreferrer"><div><ImageLoader imageUrl={"swak.jpg"} /></div>  </a>
+      <a className="project" href="https://swak.netlify.app/" target="_blank" rel="noopener noreferrer"><div><ImageLoader imageUrl={"swak.jpg"} /></div>  </a>
       <a aria-label="ingredo fit" className="project" href="https://ingredofit-uat.netlify.app/" target="_blank" rel="noopener noreferrer"><div><ImageLoader imageUrl={"ingredo-fit.jpg"} /></div></a>
     </div>
     <div className="links">
