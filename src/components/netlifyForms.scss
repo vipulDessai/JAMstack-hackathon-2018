@@ -1,7 +1,7 @@
 $sizes: (
-    mobile: 540px,
-    tablet: 1000px,
-    hd: 1500px,
+  mobile: 540px,
+  tablet: 1000px,
+  hd: 1500px,
 );
 
 form.contact-form {
@@ -19,15 +19,16 @@ form.contact-form {
       width: 100%;
     }
   }
-  input, textarea {
+  input,
+  textarea {
     width: 100%;
     border: none;
     border-bottom: 1px solid rebeccapurple;
   }
   button {
     border: none;
-    background:rebeccapurple;
-    color:#fff;
+    background: rebeccapurple;
+    color: #fff;
     font-size: 2em;
     font-weight: 500;
     padding: 0.4em 4em;
