@@ -13,7 +13,7 @@ const Cv = () => (
       rel="noopener noreferrer">
       Download CV&nbsp;
       <FontAwesomeIcon
-        icon={icon({ prefix: 'fa', iconName: 'file-download' })}
+        icon={icon({ prefix: 'fas', iconName: 'file-download' })}
       />
     </a>
   </div>
