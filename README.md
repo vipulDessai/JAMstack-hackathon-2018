@@ -7,4 +7,4 @@
   Portfolio
 </h1>
 
-My portfolio to show the projects, important links, etc. [link](https://vipul-dessai.netlify.app/)
+My portfolio website to show the projects, important links, etc. [link](https://vipul-dessai.netlify.app/)
