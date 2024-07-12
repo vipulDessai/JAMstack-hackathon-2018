@@ -8,7 +8,7 @@ import { icon } from '@fortawesome/fontawesome-svg-core';
 const Cv = () => (
   <div className="cv">
     <a
-      href="./vipul_dessai_11_09_1992.pdf"
+      href="./vipul_dessai_11_09_1992_react_developer.pdf"
       target="_blank"
       rel="noopener noreferrer">
       Download CV&nbsp;
